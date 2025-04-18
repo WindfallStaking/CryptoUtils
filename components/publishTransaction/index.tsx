@@ -9,7 +9,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 // Configure the public client
 const publicClient = createPublicClient({
 	chain: mainnet,
-	transport: http()
+	transport: http('https://eth.llamarpc.com')
 })
 
 export default function TransactionPublisher() {
