@@ -1,14 +1,14 @@
 "use client";
 import { useState } from 'react'
 import { createPublicClient, http } from 'viem'
-import { canto } from 'viem/chains'
+import { mainnet } from 'viem/chains'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 
 // Configure the public client
 const publicClient = createPublicClient({
-	chain: canto,
+	chain: mainnet,
 	transport: http()
 })
 
