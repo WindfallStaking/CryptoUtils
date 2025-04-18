@@ -7,6 +7,9 @@ export const config = getDefaultConfig({
 	projectId: "6880439c2c1363ca1004fc65acbf043f",
 	chains: [mainnet],
 	ssr: true,
+	transports: {
+		[mainnet.id]: http('https://eth.llamarpc.com'),
+	},
 })
 
 
